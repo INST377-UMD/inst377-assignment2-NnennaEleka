@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Assignment 2 - Class Page</title>
+        <link rel="stylesheet" type="text/css" href="Home.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+        <script src="javascript/Audio.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   
+
+    </head>
+
+</html>
+
+<body>
+    <!-- Header -->
+    <h1>Welcome to the Class Page!</h1>
+    <header id="bar">
+        <h1>Stocks</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="nav-bar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Stocks.html">Stocks</a></li>
+            <li><a href="Dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <form name="Stock Form">
+        <label for="name">Name:</label>
+        <input type = "text" id="stockTicker" placeholder= "Enter Stock Name" required>
+        <br>
+        <label for="days">Choose</label>
+        <select id="days">
+            <option value="thirty">30 Days</option>
+            <option value="sixty">60 Days</option>
+            <option value="ninety">90 Days</option>
+        </select>
+        <br>
+        <button id="loadChart" class="button-52">Look Up!</button>
+    </form>
+
+    <canvas id="stockChart" width="400" height="200"></canvas>
+
+    <h3>Top 5 Stocks</h3>
+    <div id="topStocksContainer"></div>
+    
+
+
+      <!-- Chart -->
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <!-- Audio Div -->
+            <div class="content-box">
+                <h1>On this web page you can navigate with audio &#128066;</h1>
+                <h2>Ensure your Mic is enabled to be able to use this feature</h2>
+                <ul>
+                    <li>Populate the field and show the chart for the ticker for 30 Days
+                        <ul>
+                            <li>Say: <b>Look up &lt;stock&gt; </b></li>
+                        </ul>
+                    </li>
+        
+                </ul>
+               
+                <!-- Toggle Audio Buttons -->
+                <div class="button-container">
+                    <button onclick="turnOnAudio()" class="on-audio-button">Turn on Listening</button>
+                    <button onclick="turnOffAudio()" class="off-audio-button">Turn Off Listening</button>
+                </div>
+            </div>
+
+            <script src="javascript/Stocks.js"></script>
+</body>

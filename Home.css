@@ -1,0 +1,201 @@
+/* Universal CSS */
+body {
+    background-color: rgb(245, 239, 130);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#bar {
+    text-align: center;
+    color:rgb(30, 154, 32);
+    background-color:rgb(250, 255, 250);
+    margin: auto;
+    padding: 5px;
+    width: 100%;
+    clear: both;
+}
+
+#nav-bar {
+    background-color: rgb(140, 153, 221);
+    text-align: center;
+    width: 100%;
+}
+
+#nav-bar li {
+    display: inline-block;
+    position: relative;
+    color: white;
+}
+
+#nav-bar li a{
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    display: block; 
+    padding: 10px 20px;
+}
+
+#nav-bar li a:hover {
+    background-color: aliceblue;
+    color: rgb(140, 153, 221);
+}
+
+#nav-bar ul ul {
+    display: none;
+    position:absolute;
+}
+
+#nav-bar li:hover ul {
+    display:block;
+    position: absolute;
+    background-color:  rgb(140, 153, 221);
+    float: left;
+    padding: 0px;
+}
+
+.heading {
+    text-align: center;
+}
+
+/* Home CSS */
+.content-area {
+    width: 70%;
+    float:left;
+    margin-left: 15%;
+    padding: 10px;
+}
+
+.content-area p {
+    text-align: left;
+}
+
+.load-box {
+   width: 80%;
+    background-color: rgb(247, 244, 185);
+    float:left;
+    margin-left: 15%;
+    border: 2px solid rgb(140, 153, 221);
+    padding: 20px;
+    margin-bottom: 2%;
+}
+
+.load-box p{
+    color:rgb(140, 153, 221)
+}
+
+.content-box {
+    background-color: rgb(247, 244, 185);
+    color:black;
+    border: 2px solid rgb(140, 153, 221);
+    padding: 20px;
+    border-radius: 50px;
+    height:50%;
+    box-sizing: border-box; 
+    margin-bottom: 2%;
+    float: right;
+}
+
+.button-container {
+    text-align:center;
+    padding: 10px;
+  }
+
+.button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.on-audio-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(107, 192, 108);
+  }
+
+.off-audio-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(220, 64, 21);
+  }
+
+/* Home CSS */
+
+/* <button class="button-52" role="button">Button 52</button> */
+
+/* special button CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+  /* Stocks CSS */
+.stock-table {
+    background-color: aliceblue;
+}
+
+/* Dog CSS */
+.slider img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+.breed-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #444;
+    background-color: #fff;
+    display: inline-block;
+    text-align: left;
+}
+
+.breed-button {
+    margin: 5px;
+    padding: 8px 16px;
+    background-color: #a11fa195;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container {
+    margin-top: 20px;
+}
